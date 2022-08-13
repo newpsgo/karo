@@ -1,0 +1,201 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Karo 国内镜像 PSGO.TK</title>
+<style type="text/css">
+body {
+  background-color: #1A1920;  
+  background-repeat:no-repeat;
+  height:95%;
+ }
+ button {
+            background:rgba(0,0,0,0.5);
+		    box-shadow: 0 5px 20px 0 white;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 170px;
+            height: 43px;            
+            text-align: center;
+            padding: 6px;
+            margin: 6px;
+}
+button:hover {
+            box-shadow: 0 5px 50px 0 white;
+            background-color: #0F0F53;
+            color: white;
+            border-radius: 10px;
+}
+#clock{
+ float:right;
+ margin-right:2.25%;
+ margin-top: 18px;
+ font-weight:bold;
+ font-size:28px;
+  color: white;
+}
+#date {
+ float:left;
+ margin-left:1.25%;
+ font-weight:bold;
+ margin-top: 18px;
+ font-size:28px;
+ color: white;
+}
+ .content {
+  width:80%;
+  margin-left:7.5%;
+  color:white;
+  margin-top:1%;
+  font-size:25px;
+  text-align:center;
+  border-radius:30px;
+  padding:20px;
+  line-height:40px;
+ }
+ .title {
+  font-size:40px;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-weight:bolder;
+  margin-bottom:10px;
+ }
+ .yellow {
+  color:yellow;
+ }
+ .hue {
+  color:yellow;
+  padding:10px;
+  border-radius:10px;
+  animation:hue 5s linear infinite;
+  -webkit-animation: hue 5s linear infinite;
+  box-shadow: 0px 0px 50px yellow;
+  color:white;
+  background:rgba(255,255,0,0.4);
+ }
+ .hue:hover{
+  color:yellow;
+  background:transparent;
+ }
+ @keyframes hue{
+ 0%{
+ filter:hue-rotate(0deg);
+ -webkit-filter:hue-rotate(0deg);
+ }
+ 10%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 20%{
+ box-shadow: 1px 1px 50px yellow;
+ }
+ 30%{
+ box-shadow: 1px 0px 50px yellow;
+ }
+ 40%{
+  box-shadow: 1px -1px 50px yellow;
+ }
+ 50%{
+ box-shadow: 0px -1px 50px yellow;
+ }
+ 60%{
+ box-shadow: -1px -1px 50px yellow;
+ }
+ 70%{
+ box-shadow: -1px 0px 50px yellow;
+ }
+ 80%{
+ box-shadow: -1px 1px 50px yellow;
+ }
+ 90%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 100%{
+ filter:hue-rotate(360deg);
+ -webkit-filter:hue-rotate(360deg);
+ }
+ }
+ .text {
+  padding-bottom:50px;
+ }
+  .back {
+   font-size:25px;
+   margin-top:10px;
+   display:block;
+   line-height:55px;
+   width:20%;
+   text-decoration:none;
+   height:50px;
+   background:white;
+   color:black;
+   border-radius:15px;
+  }
+  .back:hover{
+   border:2px solid white;
+   background:transparent;
+   box-sizing:border-box;
+   color:white;
+  }
+  .pointer {cursor: pointer;}
+</style>
+<script>
+    function showdate() {
+  var dt = new Date();
+    Hour= dt.getHours();
+  Minute= dt.getMinutes();
+     Day=dt.getDate();
+   Month=dt.getMonth()+1;
+   Year=dt.getFullYear();
+if (Minute < 10) { Minute = "0" + Minute; };
+if (Hour < 10) { Hour = "0" + Hour; };
+document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
+document.getElementById("clock").innerHTML = (Hour+":"+Minute);
+  }
+  
+  setInterval(showdate,0);
+</script>
+</head>
+<body class="bg-darker">
+<div id="container"  style="">
+<span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:yellow;'>Karo 国内镜像 PSGO.TK</h1>
+<h1 id=msgs2 style='font-size:25px;text-align:center;color:white;'>导航菜单分为不同系统版本和有无插件，效果略有差异</h1>
+<br>
+<div style="text-align:center"  id="MyItems">
+<a href="binloader/index.html"><button style='width: 200px;height: 40px;font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Binloader For 505 & 672 & 702 & 755 & 900'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Binloader </B></button></a><br>
+<!--<a href="505N/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='New Karo Host For 505'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>5.05N</B></button></a>-->
+<a href="505/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host For 505'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>5.05 old</B></button></a>
+<a href="505Gold/index.html"><button style='font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Gold For 505'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>5.05 Gold</B></button></a>
+<a href="Goldhen505/index.html"><button style='font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Goldhen 2.2.2 For 505'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Goldhen505</B></button></a>
+<br>
+<a href="672/index.html"><button style='font-size:22px;text-align:center;color:green' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Manual Exploit Full Cache and Compressed version For 672'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>6.72手动 </B></button></a>
+<a href="672A/index.html"><button style='font-size:22px;text-align:center;color:green' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Auto Exploit Full Cache and Compressed version For 672'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>6.72自动 </B></button></a>
+<a href="672L/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Light For 672'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>6.72L </B></button></a>
+<a href="Goldhen672/index.html"><button style='font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Goldhen 2.2.2 For 672'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Goldhen672</B></button></a>
+<!--<a href="672N/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host New Exploit and Loader For 672'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>6.72N </B></button></a>
+<a href="672NA/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host New Exploit and Loader with All Payloads For 672'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>6.72NA </B></button></a>
+<a href="672Mix/index.html"><button style='font-size:22px;text-align:center;color:green' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host very stable For 672'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>6.72 Mix </B></button></a>-->
+<br>
+<a href="702/index.html"><button style='font-size:22px;text-align:center;color:green' class="pointer" onMouseOver="msgs2.innerHTML='Karo New Host Auto Exploit and Compressed version For 702'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>7.02</B></button></a>
+<a href="702L/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host For 702 Light version'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>7.02L</B></button></a>
+<a href="Goldhen702/index.html"><button style='font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Goldhen 2.2.2 For 702'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Goldhen702</B></button></a>
+<br>
+<a href="755/index.html"><button style='font-size:22px;text-align:center;color:green' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Auto Exploit and Compressed version For 75X'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>7.55</B></button></a>
+<a href="755L/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host For 75X Light version'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>7.55L</B></button></a>
+<a href="Goldhen755/index.html"><button style='font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Goldhen 2.2.2 For 755'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Goldhen755</B></button></a>
+<!--<a href="900N/index.html"><button style='font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Manual Explot For 900'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>9.00N</B></button></a>
+<a href="900NA/index.html"><button style='font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Auto Explot For 900'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>9.00NA</B></button></a>-->
+<br>
+<a href="900CM/index.html"><button style='font-size:22px;text-align:center;color:green' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Manual Exploit Full Cache and Compressed version For 900 (hippie68 Method)'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>9.00(推荐)</B></button></a>
+<a href="900C/index.html"><button style='font-size:22px;text-align:center;color:green' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Auto Exploit Full Cache and Compressed version For 900 (hippie68 Method)'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>9.00CA</B></button></a>
+<a href="900L/index.html"><button style='font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host Auto Explot Light For 900'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>9.00L</B></button></a>
+<a href="Goldhen900/index.html"><button style='font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Karo Host auto Exploit and auto Goldhen 2.2.2 For 900'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>9.00(无插件)</B></button></a>
+<br>
+<a href="restore/index.html"><button style='width: 300px;height: 50px;font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Restore Hosts to Users Guide by Karo For 505 & 672 & 702 & 755 & 900'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Restore Host</B></button></a>
+<a href="restore2/index.html"><button style='width: 300px;height: 50px;font-size:22px;text-align:center;color:yellow' class="pointer" onMouseOver="msgs2.innerHTML='Restore PS4Trainer Offline to Users Guide by Karo For 505 & 672 & 702 & 755 & 900'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Restore PS4Trainer Offline</B></button></a>
+<div class="content" >
+ 	<div class="text" >
+ 	 <br><span class="yellow" >设计、移植和编译:</span >&nbsp;&nbsp; <span class="hue" >Karo Sharifi</span>
+ 	</div>
+ </div>
+</div>
+</body>
+</html>

@@ -1,10 +1,23 @@
 CACHE MANIFEST 
 
 CACHE: 
+alert.mjs
+cache.html
+chain.mjs
+config.mjs
+constants.mjs
+exploit.mjs
+goldhen.bin
 index.html
-goldhen_2.2.2_900.bin
+int64.js
+int64.mjs
+kexploit.js
+mem.mjs
+memtools.mjs
+offset.mjs
+rop.js
+rw.mjs
+utils.mjs
 
 NETWORK: 
 * 
-
-# Date: 2022-06-04T01:59:00Z:

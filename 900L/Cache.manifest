@@ -10,7 +10,8 @@ DumperMGU.bin
 DumperSGU.bin
 enableupdates.bin
 goldhen_212_900.bin
-goldhen_2.2.2_900.bin
+goldhen_2.3_900.bin
+goldhen_2.4_b16.2_900.bin
 index.html
 MiraLoader.bin
 Orbis-Toolbox-900.bin
@@ -18,8 +19,24 @@ ps4debug.bin
 todex-enable.bin
 todex-disable.bin
 WebRTE.bin
+alert.mjs
+cache.html
+chain.mjs
+config.mjs
+constants.mjs
+exploit.mjs
+index.html
+int64.js
+int64.mjs
+kexploit.js
+mem.mjs
+memtools.mjs
+offset.mjs
+rop.js
+rw.mjs
+utils.mjs
 
 NETWORK: 
 * 
 
-# Date: 2022-03-28T14:59:00Z:
+# Date: 2024-02-06T21:52:00Z:
